@@ -826,8 +826,18 @@ public class Main extends javax.swing.JFrame {
         }
 
         eliminar_alum.setText("Eliminar");
+        eliminar_alum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_alumActionPerformed(evt);
+            }
+        });
 
         mod_alum.setText("Modificar");
+        mod_alum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mod_alumActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_listar_alumnosLayout = new javax.swing.GroupLayout(jd_listar_alumnos.getContentPane());
         jd_listar_alumnos.getContentPane().setLayout(jd_listar_alumnosLayout);
@@ -884,8 +894,18 @@ public class Main extends javax.swing.JFrame {
         }
 
         eliminar_docente.setText("Eliminar");
+        eliminar_docente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_docenteActionPerformed(evt);
+            }
+        });
 
         mod_docente.setText("Modificar");
+        mod_docente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mod_docenteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_listar_docentesLayout = new javax.swing.GroupLayout(jd_listar_docentes.getContentPane());
         jd_listar_docentes.getContentPane().setLayout(jd_listar_docentesLayout);
@@ -940,8 +960,18 @@ public class Main extends javax.swing.JFrame {
         }
 
         eliminar_clase.setText("Eliminar");
+        eliminar_clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_claseActionPerformed(evt);
+            }
+        });
 
         mod_clase.setText("Modificar");
+        mod_clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mod_claseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_listar_clasesLayout = new javax.swing.GroupLayout(jd_listar_clases.getContentPane());
         jd_listar_clases.getContentPane().setLayout(jd_listar_clasesLayout);
@@ -996,8 +1026,18 @@ public class Main extends javax.swing.JFrame {
         }
 
         eliminar_proyecto.setText("Eliminar");
+        eliminar_proyecto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_proyectoActionPerformed(evt);
+            }
+        });
 
         mod_proyecto.setText("Modificar");
+        mod_proyecto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mod_proyectoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_listar_proyectosLayout = new javax.swing.GroupLayout(jd_listar_proyectos.getContentPane());
         jd_listar_proyectos.getContentPane().setLayout(jd_listar_proyectosLayout);
@@ -1028,7 +1068,12 @@ public class Main extends javax.swing.JFrame {
 
         tf_docente_cantidadI1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
 
-        jb_agregar_docente1.setText("Agregar");
+        jb_agregar_docente1.setText("Modificar");
+        jb_agregar_docente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_docente1ActionPerformed(evt);
+            }
+        });
 
         jLabel48.setText("Facultad");
 
@@ -1172,7 +1217,12 @@ public class Main extends javax.swing.JFrame {
 
         tf_alumno_promedio1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
 
-        jb_agergar_alumno1.setText("Agregar");
+        jb_agergar_alumno1.setText("Modificar");
+        jb_agergar_alumno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agergar_alumno1ActionPerformed(evt);
+            }
+        });
 
         jLabel43.setText("Edad:");
 
@@ -1299,7 +1349,12 @@ public class Main extends javax.swing.JFrame {
 
         jLabel61.setText("Seccion:");
 
-        jb_agregar_clase1.setText("Agregar");
+        jb_agregar_clase1.setText("Modificar");
+        jb_agregar_clase1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_clase1ActionPerformed(evt);
+            }
+        });
 
         jLabel62.setText("Codigo:");
 
@@ -1377,7 +1432,12 @@ public class Main extends javax.swing.JFrame {
 
         jLabel66.setText("Fecha de Entrega:");
 
-        jb_agregar_proyecto1.setText("Agregar");
+        jb_agregar_proyecto1.setText("Modificar");
+        jb_agregar_proyecto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_proyecto1ActionPerformed(evt);
+            }
+        });
 
         jLabel67.setText("Puntuacion:");
 
@@ -1570,9 +1630,7 @@ public class Main extends javax.swing.JFrame {
         administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
         ap.cargarArchivo();
         DefaultTableModel modelo = (DefaultTableModel) jt_alumno.getModel();
-        for (int i = 0; i < modelo.getRowCount(); i++) {
-            modelo.removeRow(i);
-        }
+        modelo.setRowCount(0);
         for (int i = 0; i < ap.getListaAlumnos().size(); i++) {
             Alumno x = ap.getListaAlumnos().get(i);
             Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getCarrera(), x.getEdad(), x.getRegistro()};
@@ -1590,9 +1648,7 @@ public class Main extends javax.swing.JFrame {
         administrarDocentes ap = new administrarDocentes("./docentes.txt");
         ap.cargarArchivo();
         DefaultTableModel modelo = (DefaultTableModel) jt_docente.getModel();
-        for (int i = 0; i < modelo.getRowCount(); i++) {
-            modelo.removeRow(i);
-        }
+        modelo.setRowCount(0);
         for (int i = 0; i < ap.getListaDocentes().size(); i++) {
             Docente x = ap.getListaDocentes().get(i);
             Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getTitulo(), x.getFacultad(), x.getNumRegistro()};
@@ -1608,11 +1664,9 @@ public class Main extends javax.swing.JFrame {
     private void crud_proyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_proyActionPerformed
         // TODO add your handling code here:
         administrarProyecto ap = new administrarProyecto("./proyectos.txt");
-            ap.cargarArchivo();
+        ap.cargarArchivo();
         DefaultTableModel modelo = (DefaultTableModel) jt_proyecto.getModel();
-        for (int i = 0; i < modelo.getRowCount(); i++) {
-            modelo.removeRow(i);
-        }
+        modelo.setRowCount(0);
         for (int i = 0; i < ap.getListaProyectos().size(); i++) {
             Proyecto x = ap.getListaProyectos().get(i);
             Object[] listar = {x.getTitulo(), x.getDescripcion(), x.getDuracion(), x.getPuntuacion(), x.getDificultad()};
@@ -1628,11 +1682,9 @@ public class Main extends javax.swing.JFrame {
     private void crud_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_claseActionPerformed
         // TODO add your handling code here:
         administrarClases ap = new administrarClases("./clases.txt");
-            ap.cargarArchivo();
+        ap.cargarArchivo();
         DefaultTableModel modelo = (DefaultTableModel) jt_clases.getModel();
-        for (int i = 0; i < modelo.getRowCount(); i++) {
-            modelo.removeRow(i);
-        }
+        modelo.setRowCount(0);
         for (int i = 0; i < ap.getListaClases().size(); i++) {
             Clase x = ap.getListaClases().get(i);
             Object[] listar = {x.getNombre(), x.getSeccion(), x.getCodigo(), x.getCodigoCarrera(), x.getAula()};
@@ -1782,6 +1834,360 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
     }//GEN-LAST:event_jb_agregar_claseActionPerformed
+
+    private void eliminar_alumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_alumActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_alumno.getSelectedRow() >= 0) {
+                int po = jt_alumno.getSelectedRow();
+                DefaultTableModel modelo = (DefaultTableModel) jt_alumno.getModel();
+                modelo.removeRow(po);
+                jt_alumno.setModel(modelo);
+                administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+                ap.cargarArchivo();
+                ap.getListaAlumnos().remove(po);
+                ap.escribirArchivo();
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_eliminar_alumActionPerformed
+
+    private void eliminar_docenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_docenteActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_docente.getSelectedRow() >= 0) {
+                int po = jt_docente.getSelectedRow();
+                DefaultTableModel modelo = (DefaultTableModel) jt_docente.getModel();
+                modelo.removeRow(po);
+                jt_docente.setModel(modelo);
+                administrarDocentes ap = new administrarDocentes("./docentes.txt");
+                ap.cargarArchivo();
+                ap.getListaDocentes().remove(po);
+                ap.escribirArchivo();
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_eliminar_docenteActionPerformed
+
+    private void eliminar_proyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_proyectoActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_proyecto.getSelectedRow() >= 0) {
+                int po = jt_proyecto.getSelectedRow();
+                DefaultTableModel modelo = (DefaultTableModel) jt_proyecto.getModel();
+                modelo.removeRow(po);
+                jt_proyecto.setModel(modelo);
+                administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+                ap.cargarArchivo();
+                ap.getListaProyectos().remove(po);
+                ap.escribirArchivo();
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_eliminar_proyectoActionPerformed
+
+    private void eliminar_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_claseActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_clases.getSelectedRow() >= 0) {
+                int po = jt_clases.getSelectedRow();
+                DefaultTableModel modelo = (DefaultTableModel) jt_clases.getModel();
+                modelo.removeRow(po);
+                jt_clases.setModel(modelo);
+                administrarClases ap = new administrarClases("./clases.txt");
+                ap.cargarArchivo();
+                ap.getListaClases().remove(po);
+                ap.escribirArchivo();
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_eliminar_claseActionPerformed
+
+    private void mod_alumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mod_alumActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_alumno.getSelectedRow() >= 0) {
+                int po = jt_alumno.getSelectedRow();
+                administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+                ap.cargarArchivo();
+                Alumno x = ap.getListaAlumnos().get(po);
+                tf_alumno_user1.setText(x.getUsername());
+                tf_alumno_pass1.setText(x.getPassword());
+                tf_alumno_nombre1.setText(x.getNombre());
+                tf_alumno_apellido1.setText(x.getApellido());
+                tf_alumno_edad1.setText(String.valueOf(x.getEdad()));
+                tf_alumno_registro1.setText(String.valueOf(x.getRegistro()));
+                tf_alumno_id1.setText(String.valueOf(x.getId()));
+                tf_alumno_years1.setText(String.valueOf(x.getYearCarrera()));
+                tf_alumno_promedio1.setText(String.valueOf(x.getPromedio()));
+                tf_alumno_carrera1.setText(String.valueOf(x.getCarrera()));
+                if (x.getFacultad().equals("Salud")) {
+                    rb_alumno_salud1.setSelected(true);
+                } else if (x.getFacultad().equals("Ingenieria")) {
+                    rb_alumno_ing1.setSelected(true);
+                } else if (x.getFacultad().equals("Licenciatura")) {
+                    rb_alumno_lic1.setSelected(true);
+                }
+                jd_mod_alumno.setModal(true);
+                jd_mod_alumno.pack();
+                jd_mod_alumno.setLocationRelativeTo(this);
+                jd_mod_alumno.setVisible(true);
+
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_mod_alumActionPerformed
+
+    private void mod_docenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mod_docenteActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_docente.getSelectedRow() >= 0) {
+                int po = jt_docente.getSelectedRow();
+                administrarDocentes ap = new administrarDocentes("./docentes.txt");
+                ap.cargarArchivo();
+                Docente x = ap.getListaDocentes().get(po);
+                tf_docente_user1.setText(x.getUsername());
+                tf_docente_pass1.setText(x.getPassword());
+                tf_docente_nombre1.setText(x.getNombre());
+                tf_docente_apellido1.setText(x.getApellido());
+                tf_docente_titulo1.setText(x.getTitulo());
+                tf_docente_postgrado1.setText(x.getPostgrado());
+                tf_docente_cantidadI1.setText(String.valueOf(x.getCantidadImpartido()));
+                tf_docente_registro1.setText(String.valueOf(x.getNumRegistro()));
+                if (x.getFacultad().equals("Salud")) {
+                    rb_docente_salud1.setSelected(true);
+                } else if (x.getFacultad().equals("Ingenieria")) {
+                    rb_docente_ing1.setSelected(true);
+                } else if (x.getFacultad().equals("Licenciatura")) {
+                    rb_docente_lic1.setSelected(true);
+                }
+                jd_mod_docente.setModal(true);
+                jd_mod_docente.pack();
+                jd_mod_docente.setLocationRelativeTo(this);
+                jd_mod_docente.setVisible(true);
+
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_mod_docenteActionPerformed
+
+    private void mod_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mod_claseActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_clases.getSelectedRow() >= 0) {
+                int po = jt_clases.getSelectedRow();
+                administrarClases ap = new administrarClases("./clases.txt");
+                ap.cargarArchivo();
+                Clase x = ap.getListaClases().get(po);
+                tf_clase_nombre1.setText(x.getNombre());
+                tf_clase_seccion1.setText(x.getSeccion());
+                tf_clase_codigo1.setText(String.valueOf(x.getCodigo()));
+                tf_clase_codigoCarrera1.setText(String.valueOf(x.getCodigoCarrera()));
+                tf_clase_cantMax1.setText(String.valueOf(x.getMaxAlumnos()));
+                tf_clase_aula1.setText(String.valueOf(x.getAula()));
+                jd_mod_clase.setModal(true);
+                jd_mod_clase.pack();
+                jd_mod_clase.setLocationRelativeTo(this);
+                jd_mod_clase.setVisible(true);
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_mod_claseActionPerformed
+
+    private void mod_proyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mod_proyectoActionPerformed
+        // TODO add your handling code here:
+        try {
+            if (jt_proyecto.getSelectedRow() >= 0) {
+                int po = jt_proyecto.getSelectedRow();
+                administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+                ap.cargarArchivo();
+                Proyecto x = ap.getListaProyectos().get(po);
+                tf_proyecto_titulo1.setText(x.getTitulo());
+                tf_proyecto_desc1.setText(x.getDescripcion());
+                tf_proyecto_fecha1.setText(x.getFechaEntrega());
+                tf_proyecto_puntuacion1.setText(String.valueOf(x.getPuntuacion()));
+                tf_proyecto_dif1.setText(String.valueOf(x.getDificultad()));
+                tf_proyecto_cantMax1.setText(String.valueOf(x.getMaxParticipantes()));
+                if (x.getDuracion().equals("Semestral")) {
+                    rb_proyecto_sem1.setSelected(true);
+                } else if (x.getDuracion().equals("Trimestral")) {
+                    rb_proyecto_tri1.setSelected(true);
+                }
+                jd_mod_proyecto.setModal(true);
+                jd_mod_proyecto.pack();
+                jd_mod_proyecto.setLocationRelativeTo(this);
+                jd_mod_proyecto.setVisible(true);
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_mod_proyectoActionPerformed
+
+    private void jb_agregar_docente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_docente1ActionPerformed
+        // TODO add your handling code here:
+        try {
+            int po = jt_docente.getSelectedRow();
+            String user = tf_docente_user1.getText();
+            String pass = tf_docente_pass1.getText();
+            String nombre = tf_docente_nombre1.getText();
+            String apellido = tf_docente_apellido1.getText();
+            String titulo = tf_docente_titulo1.getText();
+            String postgrado = tf_docente_postgrado1.getText();
+            String facultad = "";
+            if (rb_docente_salud1.isSelected()) {
+                facultad = "Salud";
+            } else if (rb_docente_lic1.isSelected()) {
+                facultad = "Licenciatura";
+            } else if (rb_docente_ing1.isSelected()) {
+                facultad = "Ingenieria";
+            }
+            int cantImpartido = Integer.parseInt(tf_docente_cantidadI1.getText());
+            int registro = Integer.parseInt(tf_docente_registro1.getText());
+            administrarDocentes ap = new administrarDocentes("./docentes.txt");
+            ap.cargarArchivo();
+            ap.getListaDocentes().get(po).setApellido(apellido);
+            ap.getListaDocentes().get(po).setCantidadImpartido(cantImpartido);
+            ap.getListaDocentes().get(po).setFacultad(facultad);
+            ap.getListaDocentes().get(po).setNombre(nombre);
+            ap.getListaDocentes().get(po).setNumRegistro(registro);
+            ap.getListaDocentes().get(po).setPassword(pass);
+            ap.getListaDocentes().get(po).setPostgrado(postgrado);
+            ap.getListaDocentes().get(po).setTitulo(titulo);
+            ap.getListaDocentes().get(po).setUsername(user);
+            ap.escribirArchivo();
+            Docente x = ap.getListaDocentes().get(po);
+            DefaultTableModel modelo = (DefaultTableModel) jt_docente.getModel();
+            Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getTitulo(), x.getFacultad(), x.getNumRegistro()};
+            modelo.insertRow(po, listar);
+            modelo.removeRow(po + 1);
+            jt_docente.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_docente1ActionPerformed
+
+    private void jb_agergar_alumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agergar_alumno1ActionPerformed
+        // TODO add your handling code here:
+        try {
+            int po = jt_docente.getSelectedRow();
+            String user = tf_alumno_user1.getText();
+            String pass = tf_alumno_pass1.getText();
+            String nombre = tf_alumno_nombre1.getText();
+            String apellido = tf_alumno_apellido1.getText();
+            String carrera = tf_alumno_carrera1.getText();
+            String facultad = "";
+            if (rb_alumno_salud1.isSelected()) {
+                facultad = "Salud";
+            } else if (rb_alumno_lic1.isSelected()) {
+                facultad = "Licenciatura";
+            } else if (rb_alumno_ing1.isSelected()) {
+                facultad = "Ingenieria";
+            }
+            int edad = Integer.parseInt(tf_alumno_edad1.getText());
+            int registro = Integer.parseInt(tf_alumno_registro1.getText());
+            int id = Integer.parseInt(tf_alumno_id1.getText());
+            int years = Integer.parseInt(tf_alumno_years1.getText());
+            int promedio = Integer.parseInt(tf_alumno_promedio1.getText());
+            administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+            ap.cargarArchivo();
+            ap.getListaAlumnos().get(po).setApellido(apellido);
+            ap.getListaAlumnos().get(po).setCarrera(carrera);
+            ap.getListaAlumnos().get(po).setEdad(edad);
+            ap.getListaAlumnos().get(po).setFacultad(facultad);
+            ap.getListaAlumnos().get(po).setId(id);
+            ap.getListaAlumnos().get(po).setNombre(nombre);
+            ap.getListaAlumnos().get(po).setPassword(pass);
+            ap.getListaAlumnos().get(po).setPromedio(promedio);
+            ap.getListaAlumnos().get(po).setRegistro(registro);
+            ap.getListaAlumnos().get(po).setUsername(user);
+            ap.getListaAlumnos().get(po).setYearCarrera(years);
+            ap.escribirArchivo();
+            DefaultTableModel modelo = (DefaultTableModel) jt_alumno.getModel();
+            modelo.setRowCount(0);
+            for (int i = 0; i < ap.getListaAlumnos().size(); i++) {
+                Alumno x = ap.getListaAlumnos().get(i);
+                Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getCarrera(), x.getEdad(), x.getRegistro()};
+                modelo.addRow(listar);
+            }
+            jt_alumno.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agergar_alumno1ActionPerformed
+
+    private void jb_agregar_clase1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_clase1ActionPerformed
+        // TODO add your handling code here:
+        try {
+            int po = jt_clases.getSelectedRow();
+            String nombre = tf_clase_nombre1.getText();
+            String seccion = tf_clase_seccion1.getText();
+            int codigo = Integer.parseInt(tf_clase_codigo1.getText());
+            int codigoCarrera = Integer.parseInt(tf_clase_codigoCarrera1.getText());
+            int cantMax = Integer.parseInt(tf_clase_cantMax1.getText());
+            int aula = Integer.parseInt(tf_clase_aula1.getText());
+            administrarClases ap = new administrarClases("./clases.txt");
+            ap.cargarArchivo();
+            ap.getListaClases().get(po).setAula(aula);
+            ap.getListaClases().get(po).setCodigo(codigo);
+            ap.getListaClases().get(po).setCodigoCarrera(codigoCarrera);
+            ap.getListaClases().get(po).setMaxAlumnos(cantMax);
+            ap.getListaClases().get(po).setNombre(nombre);
+            ap.getListaClases().get(po).setSeccion(seccion);
+            ap.escribirArchivo();
+            Clase x = ap.getListaClases().get(po);
+            DefaultTableModel modelo = (DefaultTableModel) jt_clases.getModel();
+            Object[] listar = {x.getNombre(), x.getSeccion(), x.getCodigo(), x.getCodigoCarrera(), x.getAula()};
+            modelo.insertRow(po, listar);
+            modelo.removeRow(po + 1);
+            jt_clases.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_clase1ActionPerformed
+
+    private void jb_agregar_proyecto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_proyecto1ActionPerformed
+        // TODO add your handling code here:
+        try {
+            int po = jt_proyecto.getSelectedRow();
+            String titulo = tf_proyecto_titulo1.getText();
+            String descripcion = tf_proyecto_desc1.getText();
+            String fecha = tf_proyecto_fecha1.getText();
+            String duracion = "";
+            if (rb_proyecto_sem1.isSelected()) {
+                duracion = "Semestral";
+            } else if (rb_proyecto_tri1.isSelected()) {
+                duracion = "Trimestral";
+            }
+            int puntuacion = Integer.parseInt(tf_proyecto_puntuacion1.getText());
+            int difilcutad = Integer.parseInt(tf_proyecto_dif1.getText());
+            int maxParticipantes = Integer.parseInt(tf_proyecto_cantMax1.getText());
+            administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+            ap.cargarArchivo();
+            ap.getListaProyectos().get(po).setDescripcion(descripcion);
+            ap.getListaProyectos().get(po).setDificultad(difilcutad);
+            ap.getListaProyectos().get(po).setDuracion(duracion);
+            ap.getListaProyectos().get(po).setFechaEntrega(fecha);
+            ap.getListaProyectos().get(po).setMaxParticipantes(maxParticipantes);
+            ap.getListaProyectos().get(po).setPuntuacion(puntuacion);
+            ap.getListaProyectos().get(po).setTitulo(titulo);
+            ap.escribirArchivo();
+            Proyecto x = ap.getListaProyectos().get(po);
+            DefaultTableModel modelo = (DefaultTableModel) jt_proyecto.getModel();
+            Object[] listar = {x.getTitulo(), x.getDescripcion(), x.getDuracion(), x.getPuntuacion(), x.getDificultad()};
+            modelo.insertRow(po, listar);
+            modelo.removeRow(po + 1);
+            jt_proyecto.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_proyecto1ActionPerformed
 
     /**
      * @param args the command line arguments
