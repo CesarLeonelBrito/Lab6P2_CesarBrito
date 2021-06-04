@@ -41,7 +41,6 @@ public class administrarDocentes {
         this.listaDocentes.add(p);
     }
 
-    //metodos de administracion
     public void escribirArchivo() throws IOException {
         FileWriter fw = null;
         BufferedWriter bw = null;
