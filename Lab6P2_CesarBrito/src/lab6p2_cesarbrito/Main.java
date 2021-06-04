@@ -1,6 +1,7 @@
 package lab6p2_cesarbrito;
 
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 public class Main extends javax.swing.JFrame {
 
@@ -21,17 +22,17 @@ public class Main extends javax.swing.JFrame {
         jd_admin = new javax.swing.JDialog();
         jToolBar1 = new javax.swing.JToolBar();
         add_alum = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        crud_alum = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         add_doc = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        crud_doc = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         jToolBar2 = new javax.swing.JToolBar();
         add_proj = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        crud_proy = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        add_clase = new javax.swing.JButton();
+        crud_clase = new javax.swing.JButton();
         jd_agregar_docente = new javax.swing.JDialog();
         jLabel14 = new javax.swing.JLabel();
         tf_docente_titulo = new javax.swing.JTextField();
@@ -131,7 +132,7 @@ public class Main extends javax.swing.JFrame {
         mod_clase = new javax.swing.JButton();
         jd_listar_proyectos = new javax.swing.JDialog();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jt_clases1 = new javax.swing.JTable();
+        jt_proyecto = new javax.swing.JTable();
         eliminar_proyecto = new javax.swing.JButton();
         mod_proyecto = new javax.swing.JButton();
         jd_mod_docente = new javax.swing.JDialog();
@@ -236,11 +237,16 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(add_alum);
 
-        jButton2.setText("CRUD Alumno");
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton2);
+        crud_alum.setText("CRUD Alumno");
+        crud_alum.setFocusable(false);
+        crud_alum.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        crud_alum.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        crud_alum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crud_alumActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(crud_alum);
         jToolBar1.add(jSeparator1);
 
         add_doc.setText("Agregar Docente");
@@ -254,11 +260,16 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar1.add(add_doc);
 
-        jButton4.setText("CRUD Docente");
-        jButton4.setFocusable(false);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton4);
+        crud_doc.setText("CRUD Docente");
+        crud_doc.setFocusable(false);
+        crud_doc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        crud_doc.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        crud_doc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crud_docActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(crud_doc);
         jToolBar1.add(jSeparator3);
 
         jToolBar2.setRollover(true);
@@ -274,24 +285,39 @@ public class Main extends javax.swing.JFrame {
         });
         jToolBar2.add(add_proj);
 
-        jButton6.setText("CRUD Proyecto");
-        jButton6.setFocusable(false);
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar2.add(jButton6);
+        crud_proy.setText("CRUD Proyecto");
+        crud_proy.setFocusable(false);
+        crud_proy.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        crud_proy.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        crud_proy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crud_proyActionPerformed(evt);
+            }
+        });
+        jToolBar2.add(crud_proy);
         jToolBar2.add(jSeparator2);
 
-        jButton7.setText("Agregar Clase");
-        jButton7.setFocusable(false);
-        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar2.add(jButton7);
+        add_clase.setText("Agregar Clase");
+        add_clase.setFocusable(false);
+        add_clase.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add_clase.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        add_clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_claseActionPerformed(evt);
+            }
+        });
+        jToolBar2.add(add_clase);
 
-        jButton8.setText("CRUD Clase");
-        jButton8.setFocusable(false);
-        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar2.add(jButton8);
+        crud_clase.setText("CRUD Clase");
+        crud_clase.setFocusable(false);
+        crud_clase.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        crud_clase.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        crud_clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crud_claseActionPerformed(evt);
+            }
+        });
+        jToolBar2.add(crud_clase);
 
         javax.swing.GroupLayout jd_adminLayout = new javax.swing.GroupLayout(jd_admin.getContentPane());
         jd_admin.getContentPane().setLayout(jd_adminLayout);
@@ -342,6 +368,11 @@ public class Main extends javax.swing.JFrame {
         tf_docente_cantidadI.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
 
         jb_agregar_docente.setText("Agregar");
+        jb_agregar_docente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_docenteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_agregar_docenteLayout = new javax.swing.GroupLayout(jd_agregar_docente.getContentPane());
         jd_agregar_docente.getContentPane().setLayout(jd_agregar_docenteLayout);
@@ -453,6 +484,11 @@ public class Main extends javax.swing.JFrame {
         tf_proyecto_cantMax.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
 
         jb_agregar_proyecto.setText("Agregar");
+        jb_agregar_proyecto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_proyectoActionPerformed(evt);
+            }
+        });
 
         buttonGroup3.add(rb_proyecto_tri);
         rb_proyecto_tri.setText("Trimestral");
@@ -572,6 +608,11 @@ public class Main extends javax.swing.JFrame {
         tf_alumno_promedio.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
 
         jb_agergar_alumno.setText("Agregar");
+        jb_agergar_alumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agergar_alumnoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_agregar_alumnoLayout = new javax.swing.GroupLayout(jd_agregar_alumno.getContentPane());
         jd_agregar_alumno.getContentPane().setLayout(jd_agregar_alumnoLayout);
@@ -691,6 +732,11 @@ public class Main extends javax.swing.JFrame {
         tf_clase_aula.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
 
         jb_agregar_clase.setText("Agregar");
+        jb_agregar_clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jb_agregar_claseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jd_agregar_claseLayout = new javax.swing.GroupLayout(jd_agregar_clase.getContentPane());
         jd_agregar_clase.getContentPane().setLayout(jd_agregar_claseLayout);
@@ -924,7 +970,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(57, 57, 57))
         );
 
-        jt_clases1.setModel(new javax.swing.table.DefaultTableModel(
+        jt_proyecto.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -940,13 +986,13 @@ public class Main extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane4.setViewportView(jt_clases1);
-        if (jt_clases1.getColumnModel().getColumnCount() > 0) {
-            jt_clases1.getColumnModel().getColumn(0).setResizable(false);
-            jt_clases1.getColumnModel().getColumn(1).setResizable(false);
-            jt_clases1.getColumnModel().getColumn(2).setResizable(false);
-            jt_clases1.getColumnModel().getColumn(3).setResizable(false);
-            jt_clases1.getColumnModel().getColumn(4).setResizable(false);
+        jScrollPane4.setViewportView(jt_proyecto);
+        if (jt_proyecto.getColumnModel().getColumnCount() > 0) {
+            jt_proyecto.getColumnModel().getColumn(0).setResizable(false);
+            jt_proyecto.getColumnModel().getColumn(1).setResizable(false);
+            jt_proyecto.getColumnModel().getColumn(2).setResizable(false);
+            jt_proyecto.getColumnModel().getColumn(3).setResizable(false);
+            jt_proyecto.getColumnModel().getColumn(4).setResizable(false);
         }
 
         eliminar_proyecto.setText("Eliminar");
@@ -1506,10 +1552,236 @@ public class Main extends javax.swing.JFrame {
     private void add_projActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_projActionPerformed
         // TODO add your handling code here:
         jd_agregar_proyecto.setModal(true);
-        jd_agregar_docente.pack();
-        jd_agregar_docente.setLocationRelativeTo(this);
-        jd_agregar_docente.setVisible(true);
+        jd_agregar_proyecto.pack();
+        jd_agregar_proyecto.setLocationRelativeTo(this);
+        jd_agregar_proyecto.setVisible(true);
     }//GEN-LAST:event_add_projActionPerformed
+
+    private void add_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_claseActionPerformed
+        // TODO add your handling code here:
+        jd_agregar_clase.setModal(true);
+        jd_agregar_clase.pack();
+        jd_agregar_clase.setLocationRelativeTo(this);
+        jd_agregar_clase.setVisible(true);
+    }//GEN-LAST:event_add_claseActionPerformed
+
+    private void crud_alumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_alumActionPerformed
+        // TODO add your handling code here:
+        administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+        ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_alumno.getModel();
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
+        for (int i = 0; i < ap.getListaAlumnos().size(); i++) {
+            Alumno x = ap.getListaAlumnos().get(i);
+            Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getCarrera(), x.getEdad(), x.getRegistro()};
+            modelo.addRow(listar);
+        }
+        jt_alumno.setModel(modelo);
+        jd_listar_alumnos.setModal(true);
+        jd_listar_alumnos.pack();
+        jd_listar_alumnos.setLocationRelativeTo(this);
+        jd_listar_alumnos.setVisible(true);
+    }//GEN-LAST:event_crud_alumActionPerformed
+
+    private void crud_docActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_docActionPerformed
+        // TODO add your handling code here:
+        administrarDocentes ap = new administrarDocentes("./docentes.txt");
+        ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_docente.getModel();
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
+        for (int i = 0; i < ap.getListaDocentes().size(); i++) {
+            Docente x = ap.getListaDocentes().get(i);
+            Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getTitulo(), x.getFacultad(), x.getNumRegistro()};
+            modelo.addRow(listar);
+        }
+        jt_docente.setModel(modelo);
+        jd_listar_docentes.setModal(true);
+        jd_listar_docentes.pack();
+        jd_listar_docentes.setLocationRelativeTo(this);
+        jd_listar_docentes.setVisible(true);
+    }//GEN-LAST:event_crud_docActionPerformed
+
+    private void crud_proyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_proyActionPerformed
+        // TODO add your handling code here:
+        administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+            ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_proyecto.getModel();
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
+        for (int i = 0; i < ap.getListaProyectos().size(); i++) {
+            Proyecto x = ap.getListaProyectos().get(i);
+            Object[] listar = {x.getTitulo(), x.getDescripcion(), x.getDuracion(), x.getPuntuacion(), x.getDificultad()};
+            modelo.addRow(listar);
+        }
+        jt_proyecto.setModel(modelo);
+        jd_listar_proyectos.setModal(true);
+        jd_listar_proyectos.pack();
+        jd_listar_proyectos.setLocationRelativeTo(this);
+        jd_listar_proyectos.setVisible(true);
+    }//GEN-LAST:event_crud_proyActionPerformed
+
+    private void crud_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crud_claseActionPerformed
+        // TODO add your handling code here:
+        administrarClases ap = new administrarClases("./clases.txt");
+            ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_clases.getModel();
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            modelo.removeRow(i);
+        }
+        for (int i = 0; i < ap.getListaClases().size(); i++) {
+            Clase x = ap.getListaClases().get(i);
+            Object[] listar = {x.getNombre(), x.getSeccion(), x.getCodigo(), x.getCodigoCarrera(), x.getAula()};
+            modelo.addRow(listar);
+        }
+        jt_clases.setModel(modelo);
+        jd_listar_clases.setModal(true);
+        jd_listar_clases.pack();
+        jd_listar_clases.setLocationRelativeTo(this);
+        jd_listar_clases.setVisible(true);
+    }//GEN-LAST:event_crud_claseActionPerformed
+
+    private void jb_agergar_alumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agergar_alumnoActionPerformed
+        // TODO add your handling code here:
+        try {
+            String user = tf_alumno_user.getText();
+            String pass = tf_alumno_pass.getText();
+            String nombre = tf_alumno_nombre.getText();
+            String apellido = tf_alumno_apellido.getText();
+            String carrera = tf_alumno_carrera.getText();
+            String facultad = "";
+            if (rb_alumno_salud.isSelected()) {
+                facultad = "Salud";
+            } else if (rb_alumno_lic.isSelected()) {
+                facultad = "Licenciatura";
+            } else if (rb_alumno_ing.isSelected()) {
+                facultad = "Ingenieria";
+            }
+            int edad = Integer.parseInt(tf_alumno_edad.getText());
+            int registro = Integer.parseInt(tf_alumno_registro.getText());
+            int id = Integer.parseInt(tf_alumno_id.getText());
+            int years = Integer.parseInt(tf_alumno_years.getText());
+            int promedio = Integer.parseInt(tf_alumno_promedio.getText());
+            Alumno x = new Alumno(user, pass, nombre, apellido, carrera, facultad, edad, registro, id, years, promedio);
+            administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+            ap.cargarArchivo();
+            ap.getListaAlumnos().add(x);
+            ap.escribirArchivo();
+            tf_alumno_user.setText("");
+            tf_alumno_pass.setText("");
+            tf_alumno_nombre.setText("");
+            tf_alumno_apellido.setText("");
+            tf_alumno_edad.setText("");
+            tf_alumno_registro.setText("");
+            tf_alumno_id.setText("");
+            tf_alumno_years.setText("");
+            tf_alumno_promedio.setText("");
+            tf_alumno_carrera.setText("");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agergar_alumnoActionPerformed
+
+    private void jb_agregar_docenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_docenteActionPerformed
+        // TODO add your handling code here:
+        try {
+            String user = tf_docente_user.getText();
+            String pass = tf_docente_pass.getText();
+            String nombre = tf_docente_nombre.getText();
+            String apellido = tf_docente_apellido.getText();
+            String titulo = tf_docente_titulo.getText();
+            String postgrado = tf_docente_postgrado.getText();
+            String facultad = "";
+            if (rb_docente_salud.isSelected()) {
+                facultad = "Salud";
+            } else if (rb_docente_lic.isSelected()) {
+                facultad = "Licenciatura";
+            } else if (rb_docente_ing.isSelected()) {
+                facultad = "Ingenieria";
+            }
+            int cantImpartido = Integer.parseInt(tf_docente_cantidadI.getText());
+            int registro = Integer.parseInt(tf_docente_registro.getText());
+            Docente x = new Docente(user, pass, nombre, apellido, titulo, postgrado, facultad, registro, cantImpartido);
+            administrarDocentes ap = new administrarDocentes("./docentes.txt");
+            ap.cargarArchivo();
+            ap.getListaDocentes().add(x);
+            ap.escribirArchivo();
+            tf_docente_user.setText("");
+            tf_docente_pass.setText("");
+            tf_docente_nombre.setText("");
+            tf_docente_apellido.setText("");
+            tf_docente_titulo.setText("");
+            tf_docente_postgrado.setText("");
+            tf_docente_cantidadI.setText("");
+            tf_docente_registro.setText("");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_docenteActionPerformed
+
+    private void jb_agregar_proyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_proyectoActionPerformed
+        // TODO add your handling code here:
+        try {
+            String titulo = tf_proyecto_titulo.getText();
+            String descripcion = tf_proyecto_desc.getText();
+            String fecha = tf_proyecto_fecha.getText();
+            String duracion = "";
+            if (rb_proyecto_sem.isSelected()) {
+                duracion = "Semestral";
+            } else if (rb_proyecto_tri.isSelected()) {
+                duracion = "Trimestral";
+            }
+            int puntuacion = Integer.parseInt(tf_proyecto_puntuacion.getText());
+            int difilcutad = Integer.parseInt(tf_proyecto_dif.getText());
+            int maxParticipantes = Integer.parseInt(tf_proyecto_cantMax.getText());
+            Proyecto x = new Proyecto(titulo, descripcion, duracion, fecha, puntuacion, difilcutad, maxParticipantes);
+            administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+            ap.cargarArchivo();
+            ap.getListaProyectos().add(x);
+            ap.escribirArchivo();
+            tf_proyecto_titulo.setText("");
+            tf_proyecto_desc.setText("");
+            tf_proyecto_fecha.setText("");
+            tf_proyecto_puntuacion.setText("");
+            tf_proyecto_dif.setText("");
+            tf_proyecto_cantMax.setText("");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_proyectoActionPerformed
+
+    private void jb_agregar_claseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agregar_claseActionPerformed
+        // TODO add your handling code here:
+        try {
+            String nombre = tf_clase_nombre.getText();
+            String seccion = tf_clase_seccion.getText();
+            int codigo = Integer.parseInt(tf_clase_codigo.getText());
+            int codigoCarrera = Integer.parseInt(tf_clase_codigoCarrera.getText());
+            int cantMax = Integer.parseInt(tf_clase_cantMax.getText());
+            int aula = Integer.parseInt(tf_clase_aula.getText());
+            Clase x = new Clase(nombre, seccion, codigo, codigoCarrera, cantMax, aula);
+            administrarClases ap = new administrarClases("./clases.txt");
+            ap.cargarArchivo();
+            ap.getListaClases().add(x);
+            ap.escribirArchivo();
+            tf_clase_nombre.setText("");
+            tf_clase_seccion.setText("");
+            tf_clase_codigo.setText("");
+            tf_clase_codigoCarrera.setText("");
+            tf_clase_cantMax.setText("");
+            tf_clase_aula.setText("");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jb_agregar_claseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1548,6 +1820,7 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton add_alum;
+    private javax.swing.JButton add_clase;
     private javax.swing.JButton add_doc;
     private javax.swing.JButton add_proj;
     private javax.swing.ButtonGroup buttonGroup1;
@@ -1556,15 +1829,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
     private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.JButton crud_alum;
+    private javax.swing.JButton crud_clase;
+    private javax.swing.JButton crud_doc;
+    private javax.swing.JButton crud_proy;
     private javax.swing.JButton eliminar_alum;
     private javax.swing.JButton eliminar_clase;
     private javax.swing.JButton eliminar_docente;
     private javax.swing.JButton eliminar_proyecto;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1667,8 +1939,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog jd_mod_proyecto;
     private javax.swing.JTable jt_alumno;
     private javax.swing.JTable jt_clases;
-    private javax.swing.JTable jt_clases1;
     private javax.swing.JTable jt_docente;
+    private javax.swing.JTable jt_proyecto;
     private javax.swing.JButton mod_alum;
     private javax.swing.JButton mod_clase;
     private javax.swing.JButton mod_docente;
