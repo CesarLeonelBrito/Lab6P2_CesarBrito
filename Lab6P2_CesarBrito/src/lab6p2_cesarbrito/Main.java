@@ -20,18 +20,203 @@ public class Main extends javax.swing.JFrame {
 
         jd_admin = new javax.swing.JDialog();
         jToolBar1 = new javax.swing.JToolBar();
-        jButton1 = new javax.swing.JButton();
+        add_alum = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
-        jButton3 = new javax.swing.JButton();
+        add_doc = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         jToolBar2 = new javax.swing.JToolBar();
-        jButton5 = new javax.swing.JButton();
+        add_proj = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jd_agregar_docente = new javax.swing.JDialog();
+        jLabel14 = new javax.swing.JLabel();
+        tf_docente_titulo = new javax.swing.JTextField();
+        tf_docente_apellido = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        tf_docente_user = new javax.swing.JTextField();
+        tf_docente_pass = new javax.swing.JTextField();
+        tf_docente_nombre = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        rb_docente_salud = new javax.swing.JRadioButton();
+        rb_docente_ing = new javax.swing.JRadioButton();
+        rb_docente_lic = new javax.swing.JRadioButton();
+        tf_docente_postgrado = new javax.swing.JTextField();
+        tf_docente_registro = new javax.swing.JFormattedTextField();
+        tf_docente_cantidadI = new javax.swing.JFormattedTextField();
+        jb_agregar_docente = new javax.swing.JButton();
+        jd_agregar_proyecto = new javax.swing.JDialog();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        tf_proyecto_titulo = new javax.swing.JTextField();
+        tf_proyecto_desc = new javax.swing.JTextField();
+        tf_proyecto_fecha = new javax.swing.JTextField();
+        tf_proyecto_puntuacion = new javax.swing.JFormattedTextField();
+        tf_proyecto_dif = new javax.swing.JFormattedTextField();
+        tf_proyecto_cantMax = new javax.swing.JFormattedTextField();
+        jb_agregar_proyecto = new javax.swing.JButton();
+        rb_proyecto_tri = new javax.swing.JRadioButton();
+        rb_proyecto_sem = new javax.swing.JRadioButton();
+        jd_agregar_alumno = new javax.swing.JDialog();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        tf_alumno_user = new javax.swing.JTextField();
+        tf_alumno_pass = new javax.swing.JTextField();
+        tf_alumno_nombre = new javax.swing.JTextField();
+        tf_alumno_carrera = new javax.swing.JTextField();
+        tf_alumno_apellido = new javax.swing.JTextField();
+        rb_alumno_salud = new javax.swing.JRadioButton();
+        rb_alumno_ing = new javax.swing.JRadioButton();
+        rb_alumno_lic = new javax.swing.JRadioButton();
+        tf_alumno_edad = new javax.swing.JFormattedTextField();
+        tf_alumno_id = new javax.swing.JFormattedTextField();
+        tf_alumno_registro = new javax.swing.JFormattedTextField();
+        tf_alumno_years = new javax.swing.JFormattedTextField();
+        tf_alumno_promedio = new javax.swing.JFormattedTextField();
+        jb_agergar_alumno = new javax.swing.JButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jd_agregar_clase = new javax.swing.JDialog();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        tf_clase_nombre = new javax.swing.JTextField();
+        tf_clase_seccion = new javax.swing.JTextField();
+        tf_clase_codigo = new javax.swing.JFormattedTextField();
+        tf_clase_codigoCarrera = new javax.swing.JFormattedTextField();
+        tf_clase_cantMax = new javax.swing.JFormattedTextField();
+        tf_clase_aula = new javax.swing.JFormattedTextField();
+        jb_agregar_clase = new javax.swing.JButton();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        jd_listar_alumnos = new javax.swing.JDialog();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jt_alumno = new javax.swing.JTable();
+        eliminar_alum = new javax.swing.JButton();
+        mod_alum = new javax.swing.JButton();
+        jd_listar_docentes = new javax.swing.JDialog();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jt_docente = new javax.swing.JTable();
+        eliminar_docente = new javax.swing.JButton();
+        mod_docente = new javax.swing.JButton();
+        jd_listar_clases = new javax.swing.JDialog();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jt_clases = new javax.swing.JTable();
+        eliminar_clase = new javax.swing.JButton();
+        mod_clase = new javax.swing.JButton();
+        jd_listar_proyectos = new javax.swing.JDialog();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jt_clases1 = new javax.swing.JTable();
+        eliminar_proyecto = new javax.swing.JButton();
+        mod_proyecto = new javax.swing.JButton();
+        jd_mod_docente = new javax.swing.JDialog();
+        tf_docente_cantidadI1 = new javax.swing.JFormattedTextField();
+        jb_agregar_docente1 = new javax.swing.JButton();
+        tf_docente_apellido1 = new javax.swing.JTextField();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        rb_docente_salud1 = new javax.swing.JRadioButton();
+        jLabel54 = new javax.swing.JLabel();
+        rb_docente_ing1 = new javax.swing.JRadioButton();
+        jLabel55 = new javax.swing.JLabel();
+        rb_docente_lic1 = new javax.swing.JRadioButton();
+        tf_docente_user1 = new javax.swing.JTextField();
+        tf_docente_postgrado1 = new javax.swing.JTextField();
+        tf_docente_pass1 = new javax.swing.JTextField();
+        tf_docente_nombre1 = new javax.swing.JTextField();
+        tf_docente_registro1 = new javax.swing.JFormattedTextField();
+        jLabel56 = new javax.swing.JLabel();
+        tf_docente_titulo1 = new javax.swing.JTextField();
+        jd_mod_alumno = new javax.swing.JDialog();
+        tf_alumno_carrera1 = new javax.swing.JTextField();
+        tf_alumno_apellido1 = new javax.swing.JTextField();
+        rb_alumno_salud1 = new javax.swing.JRadioButton();
+        rb_alumno_ing1 = new javax.swing.JRadioButton();
+        rb_alumno_lic1 = new javax.swing.JRadioButton();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        tf_alumno_edad1 = new javax.swing.JFormattedTextField();
+        jLabel39 = new javax.swing.JLabel();
+        tf_alumno_id1 = new javax.swing.JFormattedTextField();
+        jLabel40 = new javax.swing.JLabel();
+        tf_alumno_registro1 = new javax.swing.JFormattedTextField();
+        jLabel41 = new javax.swing.JLabel();
+        tf_alumno_years1 = new javax.swing.JFormattedTextField();
+        jLabel42 = new javax.swing.JLabel();
+        tf_alumno_promedio1 = new javax.swing.JFormattedTextField();
+        jb_agergar_alumno1 = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        tf_alumno_user1 = new javax.swing.JTextField();
+        tf_alumno_pass1 = new javax.swing.JTextField();
+        tf_alumno_nombre1 = new javax.swing.JTextField();
+        jd_mod_clase = new javax.swing.JDialog();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        tf_clase_nombre1 = new javax.swing.JTextField();
+        tf_clase_seccion1 = new javax.swing.JTextField();
+        tf_clase_codigo1 = new javax.swing.JFormattedTextField();
+        tf_clase_codigoCarrera1 = new javax.swing.JFormattedTextField();
+        tf_clase_cantMax1 = new javax.swing.JFormattedTextField();
+        jLabel60 = new javax.swing.JLabel();
+        tf_clase_aula1 = new javax.swing.JFormattedTextField();
+        jLabel61 = new javax.swing.JLabel();
+        jb_agregar_clase1 = new javax.swing.JButton();
+        jLabel62 = new javax.swing.JLabel();
+        jd_mod_proyecto = new javax.swing.JDialog();
+        tf_proyecto_desc1 = new javax.swing.JTextField();
+        tf_proyecto_fecha1 = new javax.swing.JTextField();
+        jLabel63 = new javax.swing.JLabel();
+        tf_proyecto_puntuacion1 = new javax.swing.JFormattedTextField();
+        jLabel64 = new javax.swing.JLabel();
+        tf_proyecto_dif1 = new javax.swing.JFormattedTextField();
+        jLabel65 = new javax.swing.JLabel();
+        tf_proyecto_cantMax1 = new javax.swing.JFormattedTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jb_agregar_proyecto1 = new javax.swing.JButton();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        tf_proyecto_titulo1 = new javax.swing.JTextField();
+        rb_proyecto_tri1 = new javax.swing.JRadioButton();
+        rb_proyecto_sem1 = new javax.swing.JRadioButton();
+        buttonGroup3 = new javax.swing.ButtonGroup();
+        buttonGroup4 = new javax.swing.ButtonGroup();
+        buttonGroup5 = new javax.swing.ButtonGroup();
+        buttonGroup6 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tf_login_user = new javax.swing.JTextField();
@@ -40,11 +225,16 @@ public class Main extends javax.swing.JFrame {
 
         jToolBar1.setRollover(true);
 
-        jButton1.setText("Agregar Alumno");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton1);
+        add_alum.setText("Agregar Alumno");
+        add_alum.setFocusable(false);
+        add_alum.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add_alum.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        add_alum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_alumActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(add_alum);
 
         jButton2.setText("CRUD Alumno");
         jButton2.setFocusable(false);
@@ -53,11 +243,16 @@ public class Main extends javax.swing.JFrame {
         jToolBar1.add(jButton2);
         jToolBar1.add(jSeparator1);
 
-        jButton3.setText("Agregar Docente");
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton3);
+        add_doc.setText("Agregar Docente");
+        add_doc.setFocusable(false);
+        add_doc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add_doc.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        add_doc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_docActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(add_doc);
 
         jButton4.setText("CRUD Docente");
         jButton4.setFocusable(false);
@@ -68,11 +263,16 @@ public class Main extends javax.swing.JFrame {
 
         jToolBar2.setRollover(true);
 
-        jButton5.setText("Agregar Proyecto");
-        jButton5.setFocusable(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar2.add(jButton5);
+        add_proj.setText("Agregar Proyecto");
+        add_proj.setFocusable(false);
+        add_proj.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add_proj.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        add_proj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_projActionPerformed(evt);
+            }
+        });
+        jToolBar2.add(add_proj);
 
         jButton6.setText("CRUD Proyecto");
         jButton6.setFocusable(false);
@@ -108,6 +308,1111 @@ public class Main extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(jToolBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(109, Short.MAX_VALUE))
+        );
+
+        jLabel15.setText("Usuario:");
+
+        jLabel16.setText("Contraseña:");
+
+        jLabel17.setText("Nombre:");
+
+        jLabel18.setText("Apellido:");
+
+        jLabel19.setText("Titulo:");
+
+        jLabel20.setText("Postgrado:");
+
+        jLabel21.setText("Facultad");
+
+        jLabel22.setText("Numero de Registro:");
+
+        jLabel23.setText("Cantidad de veces que ha impartido la Clase:");
+
+        buttonGroup2.add(rb_docente_salud);
+        rb_docente_salud.setText("Salud");
+
+        buttonGroup2.add(rb_docente_ing);
+        rb_docente_ing.setText("Ingeniería ");
+
+        buttonGroup2.add(rb_docente_lic);
+        rb_docente_lic.setText("Licenciatura");
+
+        tf_docente_registro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_docente_cantidadI.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jb_agregar_docente.setText("Agregar");
+
+        javax.swing.GroupLayout jd_agregar_docenteLayout = new javax.swing.GroupLayout(jd_agregar_docente.getContentPane());
+        jd_agregar_docente.getContentPane().setLayout(jd_agregar_docenteLayout);
+        jd_agregar_docenteLayout.setHorizontalGroup(
+            jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_docenteLayout.createSequentialGroup()
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_agregar_docenteLayout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jLabel14))
+                    .addGroup(jd_agregar_docenteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel23))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jb_agregar_docente, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(tf_docente_user)
+                                .addComponent(tf_docente_pass)
+                                .addComponent(tf_docente_nombre)
+                                .addComponent(tf_docente_titulo)
+                                .addComponent(tf_docente_apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jd_agregar_docenteLayout.createSequentialGroup()
+                                    .addComponent(rb_docente_salud)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(rb_docente_ing)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(rb_docente_lic))
+                                .addComponent(tf_docente_postgrado)
+                                .addComponent(tf_docente_registro)
+                                .addComponent(tf_docente_cantidadI)))))
+                .addContainerGap(117, Short.MAX_VALUE))
+        );
+        jd_agregar_docenteLayout.setVerticalGroup(
+            jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_docenteLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(tf_docente_user, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(tf_docente_pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(tf_docente_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(tf_docente_apellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(tf_docente_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(tf_docente_postgrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(rb_docente_salud)
+                    .addComponent(rb_docente_ing)
+                    .addComponent(rb_docente_lic))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(tf_docente_registro, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(tf_docente_cantidadI, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addComponent(jb_agregar_docente, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
+        jLabel24.setText("Titulo:");
+
+        jLabel25.setText("Descripcion:");
+
+        jLabel26.setText("Duracion:");
+
+        jLabel27.setText("Fecha de Entrega:");
+
+        jLabel28.setText("Puntuacion:");
+
+        jLabel29.setText("Dificultad:");
+
+        jLabel30.setText("Cantidad Maxima de Participantes:");
+
+        tf_proyecto_puntuacion.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_proyecto_dif.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_proyecto_cantMax.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jb_agregar_proyecto.setText("Agregar");
+
+        buttonGroup3.add(rb_proyecto_tri);
+        rb_proyecto_tri.setText("Trimestral");
+
+        buttonGroup3.add(rb_proyecto_sem);
+        rb_proyecto_sem.setText("Semestral");
+
+        javax.swing.GroupLayout jd_agregar_proyectoLayout = new javax.swing.GroupLayout(jd_agregar_proyecto.getContentPane());
+        jd_agregar_proyecto.getContentPane().setLayout(jd_agregar_proyectoLayout);
+        jd_agregar_proyectoLayout.setHorizontalGroup(
+            jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_proyectoLayout.createSequentialGroup()
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_agregar_proyectoLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel30)
+                            .addComponent(jLabel29)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel26))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_proyecto_titulo)
+                            .addComponent(tf_proyecto_desc, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                            .addComponent(tf_proyecto_fecha, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                            .addComponent(tf_proyecto_puntuacion)
+                            .addComponent(tf_proyecto_dif)
+                            .addComponent(tf_proyecto_cantMax)
+                            .addGroup(jd_agregar_proyectoLayout.createSequentialGroup()
+                                .addComponent(rb_proyecto_tri)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rb_proyecto_sem))))
+                    .addGroup(jd_agregar_proyectoLayout.createSequentialGroup()
+                        .addGap(275, 275, 275)
+                        .addComponent(jb_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(113, Short.MAX_VALUE))
+        );
+        jd_agregar_proyectoLayout.setVerticalGroup(
+            jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_proyectoLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(tf_proyecto_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(tf_proyecto_desc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(rb_proyecto_tri)
+                    .addComponent(rb_proyecto_sem))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(tf_proyecto_fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(tf_proyecto_puntuacion, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(tf_proyecto_dif, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel30)
+                    .addComponent(tf_proyecto_cantMax, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(79, 79, 79)
+                .addComponent(jb_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(117, Short.MAX_VALUE))
+        );
+
+        jLabel3.setText("Usuario:");
+
+        jLabel4.setText("Contraseña:");
+
+        jLabel5.setText("Nombre:");
+
+        jLabel6.setText("Apellido:");
+
+        jLabel7.setText("Carrera:");
+
+        jLabel8.setText("Facultad:");
+
+        jLabel9.setText("Edad:");
+
+        jLabel10.setText("Numero de Registro:");
+
+        jLabel11.setText("ID:");
+
+        jLabel12.setText("Años en la Carrera:");
+
+        jLabel13.setText("Promedio:");
+
+        buttonGroup1.add(rb_alumno_salud);
+        rb_alumno_salud.setText("Salud");
+
+        buttonGroup1.add(rb_alumno_ing);
+        rb_alumno_ing.setText("Ingeniería ");
+
+        buttonGroup1.add(rb_alumno_lic);
+        rb_alumno_lic.setText("Licenciatura");
+
+        tf_alumno_edad.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_alumno_id.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_alumno_registro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_alumno_years.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        tf_alumno_promedio.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jb_agergar_alumno.setText("Agregar");
+
+        javax.swing.GroupLayout jd_agregar_alumnoLayout = new javax.swing.GroupLayout(jd_agregar_alumno.getContentPane());
+        jd_agregar_alumno.getContentPane().setLayout(jd_agregar_alumnoLayout);
+        jd_agregar_alumnoLayout.setHorizontalGroup(
+            jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_alumnoLayout.createSequentialGroup()
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_agregar_alumnoLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_alumno_user)
+                            .addComponent(tf_alumno_pass, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_carrera, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_apellido, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addGroup(jd_agregar_alumnoLayout.createSequentialGroup()
+                                .addComponent(rb_alumno_salud)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rb_alumno_ing)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rb_alumno_lic))
+                            .addComponent(tf_alumno_edad)
+                            .addComponent(tf_alumno_id)
+                            .addComponent(tf_alumno_registro)
+                            .addComponent(tf_alumno_years)
+                            .addComponent(tf_alumno_promedio)))
+                    .addGroup(jd_agregar_alumnoLayout.createSequentialGroup()
+                        .addGap(266, 266, 266)
+                        .addComponent(jb_agergar_alumno)))
+                .addContainerGap(204, Short.MAX_VALUE))
+        );
+        jd_agregar_alumnoLayout.setVerticalGroup(
+            jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_alumnoLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(tf_alumno_user, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(tf_alumno_pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(tf_alumno_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(tf_alumno_apellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(tf_alumno_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(rb_alumno_salud)
+                    .addComponent(rb_alumno_ing)
+                    .addComponent(rb_alumno_lic))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(tf_alumno_edad, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(tf_alumno_registro, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(tf_alumno_id, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(tf_alumno_years, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(tf_alumno_promedio, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(jb_agergar_alumno)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+
+        jLabel31.setText("Nombre:");
+
+        jLabel32.setText("Seccion:");
+
+        jLabel33.setText("Codigo:");
+
+        jLabel34.setText("Codigo de la Carrera:");
+
+        jLabel35.setText("Cantidad Max de Alumnos:");
+
+        jLabel36.setText("Aula:");
+
+        tf_clase_codigo.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        tf_clase_codigoCarrera.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        tf_clase_cantMax.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        tf_clase_aula.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        jb_agregar_clase.setText("Agregar");
+
+        javax.swing.GroupLayout jd_agregar_claseLayout = new javax.swing.GroupLayout(jd_agregar_clase.getContentPane());
+        jd_agregar_clase.getContentPane().setLayout(jd_agregar_claseLayout);
+        jd_agregar_claseLayout.setHorizontalGroup(
+            jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_claseLayout.createSequentialGroup()
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_agregar_claseLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel32)
+                            .addComponent(jLabel31))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_clase_nombre)
+                            .addComponent(tf_clase_seccion)
+                            .addComponent(tf_clase_codigo)
+                            .addComponent(tf_clase_codigoCarrera)
+                            .addComponent(tf_clase_cantMax)
+                            .addComponent(tf_clase_aula, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_agregar_claseLayout.createSequentialGroup()
+                        .addGap(268, 268, 268)
+                        .addComponent(jb_agregar_clase, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(149, Short.MAX_VALUE))
+        );
+        jd_agregar_claseLayout.setVerticalGroup(
+            jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_claseLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(tf_clase_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(tf_clase_seccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(tf_clase_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(tf_clase_codigoCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(tf_clase_cantMax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(tf_clase_aula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(83, 83, 83)
+                .addComponent(jb_agregar_clase, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(111, Short.MAX_VALUE))
+        );
+
+        jt_alumno.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Username", "Nombre", "Apellido", "Carrera", "Edad", "Numero De Registrol"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jt_alumno);
+        if (jt_alumno.getColumnModel().getColumnCount() > 0) {
+            jt_alumno.getColumnModel().getColumn(0).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(1).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(2).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(3).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(4).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(5).setResizable(false);
+            jt_alumno.getColumnModel().getColumn(5).setHeaderValue("Numero De Registro");
+        }
+
+        eliminar_alum.setText("Eliminar");
+
+        mod_alum.setText("Modificar");
+
+        javax.swing.GroupLayout jd_listar_alumnosLayout = new javax.swing.GroupLayout(jd_listar_alumnos.getContentPane());
+        jd_listar_alumnos.getContentPane().setLayout(jd_listar_alumnosLayout);
+        jd_listar_alumnosLayout.setHorizontalGroup(
+            jd_listar_alumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_alumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+            .addGroup(jd_listar_alumnosLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(eliminar_alum, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(148, 148, 148)
+                .addComponent(mod_alum, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+        );
+        jd_listar_alumnosLayout.setVerticalGroup(
+            jd_listar_alumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_alumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGroup(jd_listar_alumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eliminar_alum, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(mod_alum, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
+        );
+
+        jt_docente.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Username", "Nombre", "Apellido", "Titulo", "Facultad", "Numero De Registro"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(jt_docente);
+        if (jt_docente.getColumnModel().getColumnCount() > 0) {
+            jt_docente.getColumnModel().getColumn(0).setResizable(false);
+            jt_docente.getColumnModel().getColumn(1).setResizable(false);
+            jt_docente.getColumnModel().getColumn(2).setResizable(false);
+            jt_docente.getColumnModel().getColumn(3).setResizable(false);
+            jt_docente.getColumnModel().getColumn(4).setResizable(false);
+            jt_docente.getColumnModel().getColumn(5).setResizable(false);
+            jt_docente.getColumnModel().getColumn(5).setHeaderValue("Numero De Registro");
+        }
+
+        eliminar_docente.setText("Eliminar");
+
+        mod_docente.setText("Modificar");
+
+        javax.swing.GroupLayout jd_listar_docentesLayout = new javax.swing.GroupLayout(jd_listar_docentes.getContentPane());
+        jd_listar_docentes.getContentPane().setLayout(jd_listar_docentesLayout);
+        jd_listar_docentesLayout.setHorizontalGroup(
+            jd_listar_docentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_docentesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2)
+                .addContainerGap())
+            .addGroup(jd_listar_docentesLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(eliminar_docente, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(148, 148, 148)
+                .addComponent(mod_docente, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+        );
+        jd_listar_docentesLayout.setVerticalGroup(
+            jd_listar_docentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_docentesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGroup(jd_listar_docentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eliminar_docente, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(mod_docente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
+        );
+
+        jt_clases.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Seccion", "Codigo", "Codigo de Carrera", "Aula"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(jt_clases);
+        if (jt_clases.getColumnModel().getColumnCount() > 0) {
+            jt_clases.getColumnModel().getColumn(0).setResizable(false);
+            jt_clases.getColumnModel().getColumn(1).setResizable(false);
+            jt_clases.getColumnModel().getColumn(2).setResizable(false);
+            jt_clases.getColumnModel().getColumn(3).setResizable(false);
+            jt_clases.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        eliminar_clase.setText("Eliminar");
+
+        mod_clase.setText("Modificar");
+
+        javax.swing.GroupLayout jd_listar_clasesLayout = new javax.swing.GroupLayout(jd_listar_clases.getContentPane());
+        jd_listar_clases.getContentPane().setLayout(jd_listar_clasesLayout);
+        jd_listar_clasesLayout.setHorizontalGroup(
+            jd_listar_clasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_clasesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
+            .addGroup(jd_listar_clasesLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(eliminar_clase, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(148, 148, 148)
+                .addComponent(mod_clase, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+        );
+        jd_listar_clasesLayout.setVerticalGroup(
+            jd_listar_clasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_clasesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGroup(jd_listar_clasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eliminar_clase, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(mod_clase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
+        );
+
+        jt_clases1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Duracion", "Puntuacion", "Dificultad"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(jt_clases1);
+        if (jt_clases1.getColumnModel().getColumnCount() > 0) {
+            jt_clases1.getColumnModel().getColumn(0).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(1).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(2).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(3).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        eliminar_proyecto.setText("Eliminar");
+
+        mod_proyecto.setText("Modificar");
+
+        javax.swing.GroupLayout jd_listar_proyectosLayout = new javax.swing.GroupLayout(jd_listar_proyectos.getContentPane());
+        jd_listar_proyectos.getContentPane().setLayout(jd_listar_proyectosLayout);
+        jd_listar_proyectosLayout.setHorizontalGroup(
+            jd_listar_proyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_proyectosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4)
+                .addContainerGap())
+            .addGroup(jd_listar_proyectosLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(eliminar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(148, 148, 148)
+                .addComponent(mod_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(274, Short.MAX_VALUE))
+        );
+        jd_listar_proyectosLayout.setVerticalGroup(
+            jd_listar_proyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_listar_proyectosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGroup(jd_listar_proyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(eliminar_proyecto, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(mod_proyecto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
+        );
+
+        tf_docente_cantidadI1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jb_agregar_docente1.setText("Agregar");
+
+        jLabel48.setText("Facultad");
+
+        jLabel49.setText("Usuario:");
+
+        jLabel50.setText("Numero de Registro:");
+
+        jLabel51.setText("Contraseña:");
+
+        jLabel52.setText("Cantidad de veces que ha impartido la Clase:");
+
+        jLabel53.setText("Nombre:");
+
+        buttonGroup4.add(rb_docente_salud1);
+        rb_docente_salud1.setText("Salud");
+
+        jLabel54.setText("Apellido:");
+
+        buttonGroup4.add(rb_docente_ing1);
+        rb_docente_ing1.setText("Ingeniería ");
+
+        jLabel55.setText("Titulo:");
+
+        buttonGroup4.add(rb_docente_lic1);
+        rb_docente_lic1.setText("Licenciatura");
+
+        tf_docente_registro1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel56.setText("Postgrado:");
+
+        javax.swing.GroupLayout jd_mod_docenteLayout = new javax.swing.GroupLayout(jd_mod_docente.getContentPane());
+        jd_mod_docente.getContentPane().setLayout(jd_mod_docenteLayout);
+        jd_mod_docenteLayout.setHorizontalGroup(
+            jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_docenteLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel54)
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel51)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel56)
+                    .addComponent(jLabel48)
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel52))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jb_agregar_docente1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(tf_docente_user1)
+                        .addComponent(tf_docente_pass1)
+                        .addComponent(tf_docente_nombre1)
+                        .addComponent(tf_docente_titulo1)
+                        .addComponent(tf_docente_apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jd_mod_docenteLayout.createSequentialGroup()
+                            .addComponent(rb_docente_salud1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rb_docente_ing1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(rb_docente_lic1))
+                        .addComponent(tf_docente_postgrado1)
+                        .addComponent(tf_docente_registro1)
+                        .addComponent(tf_docente_cantidadI1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(84, Short.MAX_VALUE))
+        );
+        jd_mod_docenteLayout.setVerticalGroup(
+            jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_docenteLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(tf_docente_user1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(tf_docente_pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(tf_docente_nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(tf_docente_apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(tf_docente_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(tf_docente_postgrado1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(rb_docente_salud1)
+                    .addComponent(rb_docente_ing1)
+                    .addComponent(rb_docente_lic1))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(tf_docente_registro1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(tf_docente_cantidadI1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addComponent(jb_agregar_docente1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(67, Short.MAX_VALUE))
+        );
+
+        buttonGroup5.add(rb_alumno_salud1);
+        rb_alumno_salud1.setText("Salud");
+
+        buttonGroup5.add(rb_alumno_ing1);
+        rb_alumno_ing1.setText("Ingeniería ");
+
+        buttonGroup5.add(rb_alumno_lic1);
+        rb_alumno_lic1.setText("Licenciatura");
+
+        jLabel37.setText("Usuario:");
+
+        jLabel38.setText("Contraseña:");
+
+        tf_alumno_edad1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel39.setText("Nombre:");
+
+        tf_alumno_id1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel40.setText("Apellido:");
+
+        tf_alumno_registro1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel41.setText("Carrera:");
+
+        tf_alumno_years1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel42.setText("Facultad:");
+
+        tf_alumno_promedio1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jb_agergar_alumno1.setText("Agregar");
+
+        jLabel43.setText("Edad:");
+
+        jLabel44.setText("Numero de Registro:");
+
+        jLabel45.setText("ID:");
+
+        jLabel46.setText("Años en la Carrera:");
+
+        jLabel47.setText("Promedio:");
+
+        javax.swing.GroupLayout jd_mod_alumnoLayout = new javax.swing.GroupLayout(jd_mod_alumno.getContentPane());
+        jd_mod_alumno.getContentPane().setLayout(jd_mod_alumnoLayout);
+        jd_mod_alumnoLayout.setHorizontalGroup(
+            jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_alumnoLayout.createSequentialGroup()
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_mod_alumnoLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel47)
+                            .addComponent(jLabel46)
+                            .addComponent(jLabel45)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel43)
+                            .addComponent(jLabel42)
+                            .addComponent(jLabel41)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel37))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_alumno_user1)
+                            .addComponent(tf_alumno_pass1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_nombre1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_carrera1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addComponent(tf_alumno_apellido1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                            .addGroup(jd_mod_alumnoLayout.createSequentialGroup()
+                                .addComponent(rb_alumno_salud1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rb_alumno_ing1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rb_alumno_lic1))
+                            .addComponent(tf_alumno_edad1)
+                            .addComponent(tf_alumno_id1)
+                            .addComponent(tf_alumno_registro1)
+                            .addComponent(tf_alumno_years1)
+                            .addComponent(tf_alumno_promedio1)))
+                    .addGroup(jd_mod_alumnoLayout.createSequentialGroup()
+                        .addGap(266, 266, 266)
+                        .addComponent(jb_agergar_alumno1)))
+                .addContainerGap(94, Short.MAX_VALUE))
+        );
+        jd_mod_alumnoLayout.setVerticalGroup(
+            jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_alumnoLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel37)
+                    .addComponent(tf_alumno_user1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel38)
+                    .addComponent(tf_alumno_pass1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(tf_alumno_nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(tf_alumno_apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(tf_alumno_carrera1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(rb_alumno_salud1)
+                    .addComponent(rb_alumno_ing1)
+                    .addComponent(rb_alumno_lic1))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43)
+                    .addComponent(tf_alumno_edad1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(tf_alumno_registro1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(tf_alumno_id1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(tf_alumno_years1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(tf_alumno_promedio1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(jb_agergar_alumno1)
+                .addContainerGap(65, Short.MAX_VALUE))
+        );
+
+        jLabel57.setText("Codigo de la Carrera:");
+
+        jLabel58.setText("Cantidad Max de Alumnos:");
+
+        jLabel59.setText("Aula:");
+
+        tf_clase_codigo1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        tf_clase_codigoCarrera1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        tf_clase_cantMax1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        jLabel60.setText("Nombre:");
+
+        tf_clase_aula1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+
+        jLabel61.setText("Seccion:");
+
+        jb_agregar_clase1.setText("Agregar");
+
+        jLabel62.setText("Codigo:");
+
+        javax.swing.GroupLayout jd_mod_claseLayout = new javax.swing.GroupLayout(jd_mod_clase.getContentPane());
+        jd_mod_clase.getContentPane().setLayout(jd_mod_claseLayout);
+        jd_mod_claseLayout.setHorizontalGroup(
+            jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_claseLayout.createSequentialGroup()
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_mod_claseLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel58)
+                            .addComponent(jLabel57)
+                            .addComponent(jLabel62)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel60))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_clase_nombre1)
+                            .addComponent(tf_clase_seccion1)
+                            .addComponent(tf_clase_codigo1)
+                            .addComponent(tf_clase_codigoCarrera1)
+                            .addComponent(tf_clase_cantMax1)
+                            .addComponent(tf_clase_aula1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_mod_claseLayout.createSequentialGroup()
+                        .addGap(268, 268, 268)
+                        .addComponent(jb_agregar_clase1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(133, Short.MAX_VALUE))
+        );
+        jd_mod_claseLayout.setVerticalGroup(
+            jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_claseLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel60)
+                    .addComponent(tf_clase_nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel61)
+                    .addComponent(tf_clase_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel62)
+                    .addComponent(tf_clase_codigo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel57)
+                    .addComponent(tf_clase_codigoCarrera1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel58)
+                    .addComponent(tf_clase_cantMax1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_claseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel59)
+                    .addComponent(tf_clase_aula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(83, 83, 83)
+                .addComponent(jb_agregar_clase1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(140, Short.MAX_VALUE))
+        );
+
+        jLabel63.setText("Titulo:");
+
+        tf_proyecto_puntuacion1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel64.setText("Descripcion:");
+
+        tf_proyecto_dif1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel65.setText("Duracion:");
+
+        tf_proyecto_cantMax1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("##############"))));
+
+        jLabel66.setText("Fecha de Entrega:");
+
+        jb_agregar_proyecto1.setText("Agregar");
+
+        jLabel67.setText("Puntuacion:");
+
+        jLabel68.setText("Dificultad:");
+
+        jLabel69.setText("Cantidad Maxima de Participantes:");
+
+        buttonGroup6.add(rb_proyecto_tri1);
+        rb_proyecto_tri1.setText("Trimestral");
+
+        buttonGroup6.add(rb_proyecto_sem1);
+        rb_proyecto_sem1.setText("Semestral");
+
+        javax.swing.GroupLayout jd_mod_proyectoLayout = new javax.swing.GroupLayout(jd_mod_proyecto.getContentPane());
+        jd_mod_proyecto.getContentPane().setLayout(jd_mod_proyectoLayout);
+        jd_mod_proyectoLayout.setHorizontalGroup(
+            jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_proyectoLayout.createSequentialGroup()
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_mod_proyectoLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel69)
+                            .addComponent(jLabel68)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel64)
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel66)
+                            .addComponent(jLabel65))
+                        .addGap(18, 18, 18)
+                        .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_proyecto_titulo1)
+                            .addComponent(tf_proyecto_desc1, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                            .addComponent(tf_proyecto_fecha1, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                            .addComponent(tf_proyecto_puntuacion1)
+                            .addComponent(tf_proyecto_dif1)
+                            .addComponent(tf_proyecto_cantMax1)
+                            .addGroup(jd_mod_proyectoLayout.createSequentialGroup()
+                                .addComponent(rb_proyecto_tri1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rb_proyecto_sem1))))
+                    .addGroup(jd_mod_proyectoLayout.createSequentialGroup()
+                        .addGap(275, 275, 275)
+                        .addComponent(jb_agregar_proyecto1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+        jd_mod_proyectoLayout.setVerticalGroup(
+            jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_mod_proyectoLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel63)
+                    .addComponent(tf_proyecto_titulo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel64)
+                    .addComponent(tf_proyecto_desc1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel65)
+                    .addComponent(rb_proyecto_tri1)
+                    .addComponent(rb_proyecto_sem1))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel66)
+                    .addComponent(tf_proyecto_fecha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel67)
+                    .addComponent(tf_proyecto_puntuacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel68)
+                    .addComponent(tf_proyecto_dif1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_mod_proyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel69)
+                    .addComponent(tf_proyecto_cantMax1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(79, 79, 79)
+                .addComponent(jb_agregar_proyecto1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -182,6 +1487,30 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jb_loginActionPerformed
 
+    private void add_alumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_alumActionPerformed
+        // TODO add your handling code here:
+        jd_agregar_alumno.setModal(true);
+        jd_agregar_alumno.pack();
+        jd_agregar_alumno.setLocationRelativeTo(this);
+        jd_agregar_alumno.setVisible(true);
+    }//GEN-LAST:event_add_alumActionPerformed
+
+    private void add_docActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_docActionPerformed
+        // TODO add your handling code here:
+        jd_agregar_docente.setModal(true);
+        jd_agregar_docente.pack();
+        jd_agregar_docente.setLocationRelativeTo(this);
+        jd_agregar_docente.setVisible(true);
+    }//GEN-LAST:event_add_docActionPerformed
+
+    private void add_projActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_projActionPerformed
+        // TODO add your handling code here:
+        jd_agregar_proyecto.setModal(true);
+        jd_agregar_docente.pack();
+        jd_agregar_docente.setLocationRelativeTo(this);
+        jd_agregar_docente.setVisible(true);
+    }//GEN-LAST:event_add_projActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -218,24 +1547,209 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton add_alum;
+    private javax.swing.JButton add_doc;
+    private javax.swing.JButton add_proj;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.JButton eliminar_alum;
+    private javax.swing.JButton eliminar_clase;
+    private javax.swing.JButton eliminar_docente;
+    private javax.swing.JButton eliminar_proyecto;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JToolBar jToolBar2;
+    private javax.swing.JButton jb_agergar_alumno;
+    private javax.swing.JButton jb_agergar_alumno1;
+    private javax.swing.JButton jb_agregar_clase;
+    private javax.swing.JButton jb_agregar_clase1;
+    private javax.swing.JButton jb_agregar_docente;
+    private javax.swing.JButton jb_agregar_docente1;
+    private javax.swing.JButton jb_agregar_proyecto;
+    private javax.swing.JButton jb_agregar_proyecto1;
     private javax.swing.JButton jb_login;
     private javax.swing.JDialog jd_admin;
+    private javax.swing.JDialog jd_agregar_alumno;
+    private javax.swing.JDialog jd_agregar_clase;
+    private javax.swing.JDialog jd_agregar_docente;
+    private javax.swing.JDialog jd_agregar_proyecto;
+    private javax.swing.JDialog jd_listar_alumnos;
+    private javax.swing.JDialog jd_listar_clases;
+    private javax.swing.JDialog jd_listar_docentes;
+    private javax.swing.JDialog jd_listar_proyectos;
+    private javax.swing.JDialog jd_mod_alumno;
+    private javax.swing.JDialog jd_mod_clase;
+    private javax.swing.JDialog jd_mod_docente;
+    private javax.swing.JDialog jd_mod_proyecto;
+    private javax.swing.JTable jt_alumno;
+    private javax.swing.JTable jt_clases;
+    private javax.swing.JTable jt_clases1;
+    private javax.swing.JTable jt_docente;
+    private javax.swing.JButton mod_alum;
+    private javax.swing.JButton mod_clase;
+    private javax.swing.JButton mod_docente;
+    private javax.swing.JButton mod_proyecto;
+    private javax.swing.JRadioButton rb_alumno_ing;
+    private javax.swing.JRadioButton rb_alumno_ing1;
+    private javax.swing.JRadioButton rb_alumno_lic;
+    private javax.swing.JRadioButton rb_alumno_lic1;
+    private javax.swing.JRadioButton rb_alumno_salud;
+    private javax.swing.JRadioButton rb_alumno_salud1;
+    private javax.swing.JRadioButton rb_docente_ing;
+    private javax.swing.JRadioButton rb_docente_ing1;
+    private javax.swing.JRadioButton rb_docente_lic;
+    private javax.swing.JRadioButton rb_docente_lic1;
+    private javax.swing.JRadioButton rb_docente_salud;
+    private javax.swing.JRadioButton rb_docente_salud1;
+    private javax.swing.JRadioButton rb_proyecto_sem;
+    private javax.swing.JRadioButton rb_proyecto_sem1;
+    private javax.swing.JRadioButton rb_proyecto_tri;
+    private javax.swing.JRadioButton rb_proyecto_tri1;
+    private javax.swing.JTextField tf_alumno_apellido;
+    private javax.swing.JTextField tf_alumno_apellido1;
+    private javax.swing.JTextField tf_alumno_carrera;
+    private javax.swing.JTextField tf_alumno_carrera1;
+    private javax.swing.JFormattedTextField tf_alumno_edad;
+    private javax.swing.JFormattedTextField tf_alumno_edad1;
+    private javax.swing.JFormattedTextField tf_alumno_id;
+    private javax.swing.JFormattedTextField tf_alumno_id1;
+    private javax.swing.JTextField tf_alumno_nombre;
+    private javax.swing.JTextField tf_alumno_nombre1;
+    private javax.swing.JTextField tf_alumno_pass;
+    private javax.swing.JTextField tf_alumno_pass1;
+    private javax.swing.JFormattedTextField tf_alumno_promedio;
+    private javax.swing.JFormattedTextField tf_alumno_promedio1;
+    private javax.swing.JFormattedTextField tf_alumno_registro;
+    private javax.swing.JFormattedTextField tf_alumno_registro1;
+    private javax.swing.JTextField tf_alumno_user;
+    private javax.swing.JTextField tf_alumno_user1;
+    private javax.swing.JFormattedTextField tf_alumno_years;
+    private javax.swing.JFormattedTextField tf_alumno_years1;
+    private javax.swing.JFormattedTextField tf_clase_aula;
+    private javax.swing.JFormattedTextField tf_clase_aula1;
+    private javax.swing.JFormattedTextField tf_clase_cantMax;
+    private javax.swing.JFormattedTextField tf_clase_cantMax1;
+    private javax.swing.JFormattedTextField tf_clase_codigo;
+    private javax.swing.JFormattedTextField tf_clase_codigo1;
+    private javax.swing.JFormattedTextField tf_clase_codigoCarrera;
+    private javax.swing.JFormattedTextField tf_clase_codigoCarrera1;
+    private javax.swing.JTextField tf_clase_nombre;
+    private javax.swing.JTextField tf_clase_nombre1;
+    private javax.swing.JTextField tf_clase_seccion;
+    private javax.swing.JTextField tf_clase_seccion1;
+    private javax.swing.JTextField tf_docente_apellido;
+    private javax.swing.JTextField tf_docente_apellido1;
+    private javax.swing.JFormattedTextField tf_docente_cantidadI;
+    private javax.swing.JFormattedTextField tf_docente_cantidadI1;
+    private javax.swing.JTextField tf_docente_nombre;
+    private javax.swing.JTextField tf_docente_nombre1;
+    private javax.swing.JTextField tf_docente_pass;
+    private javax.swing.JTextField tf_docente_pass1;
+    private javax.swing.JTextField tf_docente_postgrado;
+    private javax.swing.JTextField tf_docente_postgrado1;
+    private javax.swing.JFormattedTextField tf_docente_registro;
+    private javax.swing.JFormattedTextField tf_docente_registro1;
+    private javax.swing.JTextField tf_docente_titulo;
+    private javax.swing.JTextField tf_docente_titulo1;
+    private javax.swing.JTextField tf_docente_user;
+    private javax.swing.JTextField tf_docente_user1;
     private javax.swing.JPasswordField tf_login_pass;
     private javax.swing.JTextField tf_login_user;
+    private javax.swing.JFormattedTextField tf_proyecto_cantMax;
+    private javax.swing.JFormattedTextField tf_proyecto_cantMax1;
+    private javax.swing.JTextField tf_proyecto_desc;
+    private javax.swing.JTextField tf_proyecto_desc1;
+    private javax.swing.JFormattedTextField tf_proyecto_dif;
+    private javax.swing.JFormattedTextField tf_proyecto_dif1;
+    private javax.swing.JTextField tf_proyecto_fecha;
+    private javax.swing.JTextField tf_proyecto_fecha1;
+    private javax.swing.JFormattedTextField tf_proyecto_puntuacion;
+    private javax.swing.JFormattedTextField tf_proyecto_puntuacion1;
+    private javax.swing.JTextField tf_proyecto_titulo;
+    private javax.swing.JTextField tf_proyecto_titulo1;
     // End of variables declaration//GEN-END:variables
 }

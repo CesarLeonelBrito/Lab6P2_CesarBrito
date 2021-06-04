@@ -19,7 +19,7 @@ public class Proyecto {
         this.duracion = duracion;
         this.fechaEntrega = fechaEntrega;
         this.puntuacion = puntuacion;
-        this.dificultad = dificultad;
+        this.setDificultad(dificultad);
         this.maxParticipantes = maxParticipantes;
     }
 
@@ -68,7 +68,9 @@ public class Proyecto {
     }
 
     public void setDificultad(int dificultad) {
-        this.dificultad = dificultad;
+        if (dificultad >= 1 && dificultad <= 5) {
+            this.dificultad = dificultad;
+        }
     }
 
     public int getMaxParticipantes() {
