@@ -218,6 +218,28 @@ public class Main extends javax.swing.JFrame {
         buttonGroup4 = new javax.swing.ButtonGroup();
         buttonGroup5 = new javax.swing.ButtonGroup();
         buttonGroup6 = new javax.swing.ButtonGroup();
+        jd_docente = new javax.swing.JDialog();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jd_alumno = new javax.swing.JDialog();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        ver_clases = new javax.swing.JDialog();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jt_clases1 = new javax.swing.JTable();
+        ver_proyectos = new javax.swing.JDialog();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jt_proyecto1 = new javax.swing.JTable();
+        info_alum = new javax.swing.JDialog();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tf_login_user = new javax.swing.JTextField();
@@ -1521,6 +1543,182 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(146, Short.MAX_VALUE))
         );
 
+        jMenu3.setText("File");
+
+        jMenuItem4.setText("Agregar Proyecto");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem4);
+
+        jMenuItem5.setText("CRUD Proyecto");
+        jMenu3.add(jMenuItem5);
+
+        jMenuItem6.setText("Ver Clases");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem6);
+
+        jMenuItem7.setText("Mi Info");
+        jMenu3.add(jMenuItem7);
+
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
+
+        jd_docente.setJMenuBar(jMenuBar2);
+
+        javax.swing.GroupLayout jd_docenteLayout = new javax.swing.GroupLayout(jd_docente.getContentPane());
+        jd_docente.getContentPane().setLayout(jd_docenteLayout);
+        jd_docenteLayout.setHorizontalGroup(
+            jd_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 671, Short.MAX_VALUE)
+        );
+        jd_docenteLayout.setVerticalGroup(
+            jd_docenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 433, Short.MAX_VALUE)
+        );
+
+        jMenu1.setText("File");
+
+        jMenuItem2.setText("Ver Clases");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuItem3.setText("Ver Proyectos");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem3);
+
+        jMenuItem1.setText("Mi Info");
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        jd_alumno.setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout jd_alumnoLayout = new javax.swing.GroupLayout(jd_alumno.getContentPane());
+        jd_alumno.getContentPane().setLayout(jd_alumnoLayout);
+        jd_alumnoLayout.setHorizontalGroup(
+            jd_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 482, Short.MAX_VALUE)
+        );
+        jd_alumnoLayout.setVerticalGroup(
+            jd_alumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 376, Short.MAX_VALUE)
+        );
+
+        jt_clases1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Seccion", "Codigo", "Codigo de Carrera", "Aula"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(jt_clases1);
+        if (jt_clases1.getColumnModel().getColumnCount() > 0) {
+            jt_clases1.getColumnModel().getColumn(0).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(1).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(2).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(3).setResizable(false);
+            jt_clases1.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        javax.swing.GroupLayout ver_clasesLayout = new javax.swing.GroupLayout(ver_clases.getContentPane());
+        ver_clases.getContentPane().setLayout(ver_clasesLayout);
+        ver_clasesLayout.setHorizontalGroup(
+            ver_clasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ver_clasesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 735, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        ver_clasesLayout.setVerticalGroup(
+            ver_clasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ver_clasesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jt_proyecto1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Duracion", "Puntuacion", "Dificultad"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(jt_proyecto1);
+        if (jt_proyecto1.getColumnModel().getColumnCount() > 0) {
+            jt_proyecto1.getColumnModel().getColumn(0).setResizable(false);
+            jt_proyecto1.getColumnModel().getColumn(1).setResizable(false);
+            jt_proyecto1.getColumnModel().getColumn(2).setResizable(false);
+            jt_proyecto1.getColumnModel().getColumn(3).setResizable(false);
+            jt_proyecto1.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        javax.swing.GroupLayout ver_proyectosLayout = new javax.swing.GroupLayout(ver_proyectos.getContentPane());
+        ver_proyectos.getContentPane().setLayout(ver_proyectosLayout);
+        ver_proyectosLayout.setHorizontalGroup(
+            ver_proyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ver_proyectosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        ver_proyectosLayout.setVerticalGroup(
+            ver_proyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ver_proyectosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout info_alumLayout = new javax.swing.GroupLayout(info_alum.getContentPane());
+        info_alum.getContentPane().setLayout(info_alumLayout);
+        info_alumLayout.setHorizontalGroup(
+            info_alumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 740, Short.MAX_VALUE)
+        );
+        info_alumLayout.setVerticalGroup(
+            info_alumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 455, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
@@ -1580,6 +1778,10 @@ public class Main extends javax.swing.JFrame {
         try {
             String user = tf_login_user.getText();
             String pass = tf_login_pass.getText();
+            administrarAlumnos ap = new administrarAlumnos("./alumnos.txt");
+            ap.cargarArchivo();
+            administrarDocentes ap1 = new administrarDocentes("./docentes.txt");
+            ap1.cargarArchivo();
             if (user.equals("admin") && pass.equals("1234")) {
                 jd_admin.setModal(true);
                 jd_admin.pack();
@@ -1587,6 +1789,24 @@ public class Main extends javax.swing.JFrame {
                 jd_admin.setVisible(true);
                 tf_login_user.setText("");
                 tf_login_pass.setText("");
+            }
+            for (int i = 0; i < ap.getListaAlumnos().size(); i++) {
+                if (ap.getListaAlumnos().get(i).getUsername().equals(user) && ap.getListaAlumnos().get(i).getPassword().equals(pass)) {
+                    xa = ap.getListaAlumnos().get(i);
+                    jd_alumno.setModal(true);
+                    jd_alumno.pack();
+                    jd_alumno.setLocationRelativeTo(this);
+                    jd_alumno.setVisible(true);
+                }
+            }
+            for (int i = 0; i < ap1.getListaDocentes().size(); i++) {
+                if (ap1.getListaDocentes().get(i).getUsername().equals(user) && ap1.getListaDocentes().get(i).getPassword().equals(pass)) {
+                    yd = ap1.getListaDocentes().get(i);
+                    jd_docente.setModal(true);
+                    jd_docente.pack();
+                    jd_docente.setLocationRelativeTo(this);
+                    jd_docente.setVisible(true);
+                }
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
@@ -2076,7 +2296,7 @@ public class Main extends javax.swing.JFrame {
     private void jb_agergar_alumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_agergar_alumno1ActionPerformed
         // TODO add your handling code here:
         try {
-            int po = jt_docente.getSelectedRow();
+            int po = jt_alumno.getSelectedRow();
             String user = tf_alumno_user1.getText();
             String pass = tf_alumno_pass1.getText();
             String nombre = tf_alumno_nombre1.getText();
@@ -2109,14 +2329,13 @@ public class Main extends javax.swing.JFrame {
             ap.getListaAlumnos().get(po).setUsername(user);
             ap.getListaAlumnos().get(po).setYearCarrera(years);
             ap.escribirArchivo();
+            Alumno x = ap.getListaAlumnos().get(po);
             DefaultTableModel modelo = (DefaultTableModel) jt_alumno.getModel();
-            modelo.setRowCount(0);
-            for (int i = 0; i < ap.getListaAlumnos().size(); i++) {
-                Alumno x = ap.getListaAlumnos().get(i);
-                Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getCarrera(), x.getEdad(), x.getRegistro()};
-                modelo.addRow(listar);
-            }
+            Object[] listar = {x.getUsername(), x.getNombre(), x.getApellido(), x.getCarrera(), x.getEdad(), x.getRegistro()};
+            modelo.insertRow(po, listar);
+            modelo.removeRow(po + 1);
             jt_alumno.setModel(modelo);
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
@@ -2189,6 +2408,68 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jb_agregar_proyecto1ActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        administrarClases ap = new administrarClases("./clases.txt");
+        ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_clases1.getModel();
+        modelo.setRowCount(0);
+        for (int i = 0; i < ap.getListaClases().size(); i++) {
+            Clase x = ap.getListaClases().get(i);
+            Object[] listar = {x.getNombre(), x.getSeccion(), x.getCodigo(), x.getCodigoCarrera(), x.getAula()};
+            modelo.addRow(listar);
+        }
+        jt_clases1.setModel(modelo);
+        ver_clases.setModal(true);
+        ver_clases.pack();
+        ver_clases.setLocationRelativeTo(this);
+        ver_clases.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        administrarProyecto ap = new administrarProyecto("./proyectos.txt");
+        ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_proyecto1.getModel();
+        modelo.setRowCount(0);
+        for (int i = 0; i < ap.getListaProyectos().size(); i++) {
+            Proyecto x = ap.getListaProyectos().get(i);
+            Object[] listar = {x.getTitulo(), x.getDescripcion(), x.getDuracion(), x.getPuntuacion(), x.getDificultad()};
+            modelo.addRow(listar);
+        }
+        jt_proyecto1.setModel(modelo);
+        ver_proyectos.setModal(true);
+        ver_proyectos.pack();
+        ver_proyectos.setLocationRelativeTo(this);
+        ver_proyectos.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        jd_agregar_proyecto.setModal(true);
+        jd_agregar_proyecto.pack();
+        jd_agregar_proyecto.setLocationRelativeTo(this);
+        jd_agregar_proyecto.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        administrarClases ap = new administrarClases("./clases.txt");
+        ap.cargarArchivo();
+        DefaultTableModel modelo = (DefaultTableModel) jt_clases1.getModel();
+        modelo.setRowCount(0);
+        for (int i = 0; i < ap.getListaClases().size(); i++) {
+            Clase x = ap.getListaClases().get(i);
+            Object[] listar = {x.getNombre(), x.getSeccion(), x.getCodigo(), x.getCodigoCarrera(), x.getAula()};
+            modelo.addRow(listar);
+        }
+        jt_clases1.setModel(modelo);
+        ver_clases.setModal(true);
+        ver_clases.pack();
+        ver_clases.setLocationRelativeTo(this);
+        ver_clases.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2200,7 +2481,7 @@ public class Main extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windoes".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -2243,6 +2524,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton eliminar_clase;
     private javax.swing.JButton eliminar_docente;
     private javax.swing.JButton eliminar_proyecto;
+    private javax.swing.JDialog info_alum;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2312,10 +2594,25 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
@@ -2335,6 +2632,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog jd_agregar_clase;
     private javax.swing.JDialog jd_agregar_docente;
     private javax.swing.JDialog jd_agregar_proyecto;
+    private javax.swing.JDialog jd_alumno;
+    private javax.swing.JDialog jd_docente;
     private javax.swing.JDialog jd_listar_alumnos;
     private javax.swing.JDialog jd_listar_clases;
     private javax.swing.JDialog jd_listar_docentes;
@@ -2345,8 +2644,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog jd_mod_proyecto;
     private javax.swing.JTable jt_alumno;
     private javax.swing.JTable jt_clases;
+    private javax.swing.JTable jt_clases1;
     private javax.swing.JTable jt_docente;
     private javax.swing.JTable jt_proyecto;
+    private javax.swing.JTable jt_proyecto1;
     private javax.swing.JButton mod_alum;
     private javax.swing.JButton mod_clase;
     private javax.swing.JButton mod_docente;
@@ -2429,5 +2730,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField tf_proyecto_puntuacion1;
     private javax.swing.JTextField tf_proyecto_titulo;
     private javax.swing.JTextField tf_proyecto_titulo1;
+    private javax.swing.JDialog ver_clases;
+    private javax.swing.JDialog ver_proyectos;
     // End of variables declaration//GEN-END:variables
+    Alumno xa;
+    Docente yd;
 }
